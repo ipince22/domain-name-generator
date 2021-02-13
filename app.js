@@ -1,9 +1,9 @@
-let pronoun = ['the', 'our', "his", "my", "your", "her",]
-let adj = ["ugliest", "victorious", "vivacious", "wandering",]
-let noun = ["Sandwich","Juice","Caravan","Kangaroo","King","Shampoo",]
-let end = [".COM",".cat",".net",".coop",".edu",".gov",".name",".tel",]
+let pronoun = ['the', 'our']
+let adj = ["ugliest", "victorious"]
+let noun = ["Sandwich","Juice"]
+let end = [".com",".cat",".net"]
 
-const container = document.getElementById('container')
+
 
 const createUrls = (arr1, arr2, arr3, arr4) => {
 	let urlArray = [];
@@ -21,9 +21,4 @@ const createUrls = (arr1, arr2, arr3, arr4) => {
 }
 
 const arrayOfURL = createUrls(pronoun, adj, noun, end)
-
-arrayOfURL.forEach((url) => {
-	const p = document.createElement("p")
-	p.textContent = url
-	container.appendChild(p)
-})
+console.log(arrayOfURL);
